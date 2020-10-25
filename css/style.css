@@ -1,0 +1,97 @@
+
+body{
+    background-image: url(https://www.eluniversal.com.co/sites/default/files/ninos-_familia-_naturaleza.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo img{
+    
+    width: 70%;
+    height: auto;
+}
+.busqueda{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    max-width: 400px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    padding: 30px;
+    text-align: center;      
+    background-color: rgba(70, 129, 70, 0.815);
+
+    border-radius: 23px 23px 23px 23px;
+-moz-border-radius: 23px 23px 23px 23px;
+-webkit-border-radius: 23px 23px 23px 23px;
+
+-webkit-box-shadow: 7px 13px 10px -1px rgba(0,0,0,0.22);
+-moz-box-shadow: 7px 13px 10px -1px rgba(0,0,0,0.22);
+box-shadow: 7px 13px 10px -1px rgba(0,0,0,0.22);
+border: 0px solid #000000;
+}
+.busqueda h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+   
+}
+p {
+ margin-top: 0;
+}
+.subir{
+    max-width: 50%;
+    width: 300px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(5, 116, 1, 0.945);
+    border: none;
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+}
+.subir:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgb(159, 173, 161);
+    transition: all 0.2s ease;
+}
+.datos{
+   
+    display: flex;
+    justify-content: center;
+    
+}
+.datos2 {
+   
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    height: 30px;
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+margin-top: 20px;
+margin-bottom: 20px;
+    
+}
+.datos input{
+    text-align: center;
+    width: 90%;
+    height: 30px;
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+-webkit-box-shadow: 7px 13px 10px -1px rgba(0,0,0,0.22);
+-moz-box-shadow: 7px 13px 10px -1px rgba(0,0,0,0.22);
+box-shadow: 7px 13px 10px -1px rgba(0,0,0,0.22);
+margin-bottom: 20px;
+
+
+}
