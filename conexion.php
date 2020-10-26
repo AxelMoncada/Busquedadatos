@@ -2,6 +2,7 @@
     $host = "localhost";
     $usuario = "root";
     $contraseña ="";
+    $database="nutrividecolombia";
 
     try{
             $conexion = new PDO("mysql:host=$host;dbname=nutrividecolombia", $usuario, $contraseña);

@@ -20,8 +20,8 @@
             <div>
                 <h2>Busqueda de clientes</h2>
                 <p>Ingresa el numero de documento a buscar</p>
-                <form class="datos" action="buscausuario.php" method="POST" >
-                     <input class="input" name="CedulaCliente" type="text" value="Ingresar cedula del cliente" id="buscarcedula" />
+                <form class="datos" action="busquedaclientes.php" method="POST" >
+                     <input class="input" name="CedulaCliente" type="text" value="Ingresar cedula del cliente"  />
                      <input class="buscar" type="submit" value="Buscar">
                  </form>
             </div>
@@ -39,11 +39,11 @@
             <h2>Resultado</h2>
                  <div>
                     <?php
-                        include 'buscausuario.php';
-                        while($row = mysqli_fetch_array($sql_query)){ ?>
-                    <h3> <?= $row ['b_nombre']?> </h3>
-                            <?php
-                         }
+                      include 'buscausuario.php';
+                      echo $resultado;
+                      echo $dato;
+                      echo $texto;
+                            
                     ?>
                 </div>
 
