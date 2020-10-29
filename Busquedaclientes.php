@@ -32,24 +32,35 @@
                     <input class="form-control" type="file" name="fileContacts" >
                     <button class="subir" type="button" onclick="uploadContacts()" >Subir</button>                
                 </form>
-                
+               
             </div>
         </div>
         <div class="resultado">
             <h2>Resultado</h2>
-                 <div>
+                 <div class="resultado2">
                   <?php 
                   include 'buscar.php';
+                if ($resultadofinal== false){
+                        echo "No Encontrado";
 
-                    //$row = $result->fetch_array(MYSQLI_ASSOC);   printf ("%s (%s)\n", $row["b_cedula"], $row["b_nombre"]);
+                }else{
+                  while($row = mysqli_fetch_array($resultadofinal)){ ?>
+                  
+                  
+                  <p style=" margin-bottom: 0px;"> <?= $row['c_cedula'] ?>  </p>
+                  <b style=" margin-bottom: 0px;"> <?= $row['c_nombre'] ?>  </b>
+                  <p style=" margin-bottom: 0px;"> <?= $row['c_estado'] ?>  </p>
+                    <br>
+                    <br>
+                    <br>
+        
+
+                 
+                  
+                  
+                  <?php
                    
-                    while($row = mysqli_fetch_array($result)){
-                       
-                        ?><br><?php 
-                        printf ("%s %s %s %s\n", $row["b_cedula"], $row["b_nombre"], $row["b_apellido"], $row["b_estado"]);
-                    }
-                    
-                  ?>
+                       }        };?>
                 </div>
 
         </div>
@@ -57,6 +68,8 @@
         <script type="text/javascript">
              function uploadContacts ()
              {
+
+                 
                  var form = new FormData($('#filesForm')[0]);
                  $.ajax({
                      url:"import.php",
@@ -68,12 +81,15 @@
                      {
                          alert("Registro agregado");
                      }
+                    });
+                    
+             }
+                    
                 
 
 
 
-                 });
-             }
+                
         
         
         </script>

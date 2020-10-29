@@ -5,22 +5,35 @@ include 'conexionbuscar.php';
 
 
 
+
+
+
 $codigo = $_POST['CedulaCliente'];
 
 
+   
+
 $mysqli= new mysqli($server,$usuario,$contrasena,$db);
 
-if (mysqli_connect_errno()) {
-    printf("Conexión fallida: %s\n", mysqli_connect_error());
-    exit();}
-
-
-
-
-
+        if (mysqli_connect_errno()) {
+            printf("Conexión fallida: %s\n", mysqli_connect_error());
+            exit();  
+            }else{
     
-$query = ("SELECT * FROM listadeuser WHERE b_cedula ='$codigo'");
-$result = $mysqli->query($query);
+            $query = ("SELECT * FROM datosreales WHERE c_cedula ='$codigo'");
+            $result = $mysqli->query($query);
+
+};
+if(mysqli_num_rows($result) > 0 ){
+    $resultadofinal = $result;
+}else {
+   $resultadofinal =false;
+}
+
+
+
+
+
 
 
 

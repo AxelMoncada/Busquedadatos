@@ -141,6 +141,9 @@ margin-bottom: 20px;
 box-shadow: 7px 13px 10px -1px rgba(0,0,0,0.22);
 border: 0px solid #000000;
 }
+.resultado2 p{
+    margin-bottom: 0px;
+}
 .busqueda h2{
     display: flex;
     justify-content: center;
