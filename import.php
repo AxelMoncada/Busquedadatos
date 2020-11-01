@@ -12,8 +12,7 @@
     $fileContacts = array_filter($fileContacts);
 
      //PREPARAR CONTACTOS CONVERTIRLOS EN ARRAY
-     if($fileContacts !== false){ $error="Assss";}else{};
-     if( $nombrearchivo == "USUARIOSNUTRI"){ 
+     
     foreach ($fileContacts as $contact )
     {
         $contactList[] = explode (";",$contact);

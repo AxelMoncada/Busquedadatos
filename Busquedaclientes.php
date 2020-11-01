@@ -7,6 +7,7 @@
 
         <!--Libreria jquery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
@@ -25,7 +26,7 @@
                      <input class="buscar" type="submit" value="Buscar">
                  </form>
             </div>
-            <div>
+            <div class="cargadatos">
                 <h2>Carga de datos</h2>
                 <p>Ingresa archivo xls para subir datos</p>
                 <form class="datos2" action="files.php" method="POST" enctype="multipart/form-data" id="filesForm">
@@ -47,9 +48,9 @@
                   while($row = mysqli_fetch_array($resultadofinal)){ ?>
                   
                   
-                  <p style=" margin-bottom: 0px;"> <?= $row['c_cedula'] ?>  </p>
-                  <b style=" margin-bottom: 0px;"> <?= $row['c_nombre'] ?>  </b>
-                  <p style=" margin-bottom: 0px;"> <?= $row['c_estado'] ?>  </p>
+                  <b style=" margin-bottom: 0px;"> Cedula: </b><p style=" margin-bottom: 10px;"><?= $row['c_cedula'] ?>  </p>
+                  <b style=" margin-bottom: 0px;"> Nombre: </b> <p style=" margin-bottom: 10px;"> <?= $row['c_nombre'] ?>  </p>
+                  <b style=" margin-bottom: 0px;"> Estado: </b> <p style=" margin-bottom: 10px;"><?= $row['c_estado'] ?>  </p>
                     <br>
                     <br>
                     <br>
