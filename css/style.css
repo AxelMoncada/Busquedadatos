@@ -1,6 +1,6 @@
 
 body{
-    background-image: url(https://www.eluniversal.com.co/sites/default/files/ninos-_familia-_naturaleza.jpg) ;
+    background-image: url(../img/fondo.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -21,7 +21,7 @@ body{
     margin-top: 50px;
     padding: 30px;
     text-align: center;      
-    background-color: rgba(70, 129, 70, 0.815);
+    background-color: rgba(66, 66, 66, 0.815);
 
     border-radius: 23px 23px 23px 23px;
 -moz-border-radius: 23px 23px 23px 23px;
@@ -49,7 +49,7 @@ p {
     font-weight: 600;
     font-size: 20px;
     color: white;
-    background-color: rgba(5, 116, 1, 0.945);
+    background-color:  rgba(34, 34, 34, 0.815);
     border: none;
     border-radius: 23px 23px 23px 23px;
     -moz-border-radius: 23px 23px 23px 23px;
@@ -69,7 +69,7 @@ p {
     font-weight: 600;
     font-size: 20px;
     color: white;
-    background-color: rgba(5, 116, 1, 0.945);
+    background-color: rgba(34, 34, 34, 0.815);
     border: none;
     border-radius: 23px 23px 23px 23px;
     -moz-border-radius: 23px 23px 23px 23px;
@@ -130,7 +130,7 @@ margin-bottom: 20px;
     margin-top: 20px;
     padding: 10px 0 30px 0;
     text-align: center;      
-    background-color: rgba(70, 129, 70, 0.815);
+    background-color: rgba(66, 66, 66, 0.815);
 
     border-radius: 23px 23px 23px 23px;
 -moz-border-radius: 23px 23px 23px 23px;

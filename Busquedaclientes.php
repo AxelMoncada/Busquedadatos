@@ -16,7 +16,7 @@
         
         <div class="busqueda">
                  <a class="logo">
-                <img src="img/logo.png" />
+                <h1> Grupo Empresarial</h1>
                  </a>
             <div>
                 <h2>Busqueda de clientes</h2>
