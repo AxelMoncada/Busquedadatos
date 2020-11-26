@@ -41,8 +41,9 @@
                  <div class="resultado2">
                   <?php 
                   include 'buscar.php';
-                    
-                        if ($resultadofinal == false || $codigo == 0){
+                    include 'Busquedapornombre.php';
+                        
+                        if ($resultadofinal == false || $resultadofinalname == false || $resultadofinal == "0"){
                         echo "No Encontrado";
 
                  }else{
