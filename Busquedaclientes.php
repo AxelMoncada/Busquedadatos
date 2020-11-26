@@ -20,9 +20,9 @@
                  </a>
             <div>
                 <h2>Busqueda de clientes</h2>
-                <p>Ingresa el numero de documento a buscar</p>
+                <p>Ingresa el numero de documento o nombre a buscar</p>
                 <form class="datos" action="Busquedaclientes.php" method="POST" >
-                     <input class="input" name="CedulaCliente" type="text" value="Ingresar cedula del cliente">
+                     <input class="input" name="CedulaCliente" type="text" value="">
                      <input class="buscar" type="submit" value="Buscar">
                  </form>
             </div>
@@ -41,10 +41,11 @@
                  <div class="resultado2">
                   <?php 
                   include 'buscar.php';
-                if ($resultadofinal== false){
+                    
+                        if ($resultadofinal == false || $codigo == 0){
                         echo "No Encontrado";
 
-                }else{
+                 }else{
                   while($row = mysqli_fetch_array($resultadofinal)){ ?>
                   
                   

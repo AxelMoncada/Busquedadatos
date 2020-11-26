@@ -15,7 +15,7 @@
      
     foreach ($fileContacts as $contact )
     {
-        $contactList[] = explode (";",$contact);
+        $contactList[] = explode (",",$contact);
     }
      
     //INSERTAR DATOS
