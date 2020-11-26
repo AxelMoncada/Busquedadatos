@@ -43,7 +43,7 @@
                   include 'buscar.php';
                     include 'Busquedapornombre.php';
                         
-                        if ($resultadofinal == false || $resultadofinalname == false || $resultadofinal == "0"){
+                        if ($resultadofinal == false || $resultadoname == false || $resultadofinal == "0"){
                         echo "No Encontrado";
 
                  }else{
